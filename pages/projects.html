@@ -15,17 +15,6 @@
 			href="../images/favicon.png"
 			type="image/x-icon"
 		/>
-
-		<style>
-			body {
-				font-family: "Inter", sans-serif;
-			}
-
-			/* Dark overlay for video */
-			.video-overlay {
-				background: rgba(8, 20, 35, 0.75);
-			}
-		</style>
 	</head>
 
 	<body class="bg-gray-50 text-gray-800 scroll-smooth">
@@ -42,12 +31,15 @@
 						alt="Philip Nalla Image"
 						class="w-10 h-10 object-cover"
 					/>
-					<span>Philip Nalla</span>
+					<a href="./index.html"><span>Philip Nalla</span></a>
 				</h1>
 
 				<nav
 					class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-wider"
 				>
+					<a href="../index.html" class="hover:text-blue-600 transition"
+						>Home</a
+					>
 					<a href="#about" class="hover:text-blue-600 transition">About</a>
 					<a href="#skills" class="hover:text-blue-600 transition">Skills</a>
 					<a
@@ -71,52 +63,44 @@
 			</div>
 		</header>
 
-		<!-- HERO SECTION WITH VIDEO -->
+		<!-- HERO SECTION -->
 		<section
 			class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden"
 		>
-			<!-- Background Video -->
-			<video
-				autoplay
-				muted
-				loop
-				playsinline
-				class="absolute w-auto min-w-full min-h-full max-w-none"
-			>
-				<source
-					src="https://www.pexels.com/download/video/10343918/"
-					type="video/mp4"
-				/>
-			</video>
+			<!-- Background Image -->
+			<img
+				src="../images/lab82.jpg"
+				alt="GIS Satellite Map Background"
+				class="absolute inset-0 w-full h-full object-cover"
+			/>
 
-			<!-- Overlay -->
-			<div class="absolute inset-0 video-overlay"></div>
+			<!-- Dark Overlay -->
+			<div class="absolute inset-0 bg-black/60"></div>
 
 			<!-- Content -->
 			<div class="relative z-10 max-w-4xl px-6">
-				<h2 class="text-3xl md:text-5xl font-extrabold leading-tight mb-6">
-					GIS Analyst, Remote Sensing Specialist & Geospatial Data Engineer
-				</h2>
+				<!-- CTA Button -->
+				<a
+					href="#projects"
+					class="group inline-flex items-center gap-2 px-8 py-4 bg-white text-gray-900 font-semibold rounded-lg shadow-lg transition-all duration-300 ease-in-out hover:bg-gray-200 hover:shadow-2xl hover:-translate-y-1"
+				>
+					Explore Projects
 
-				<p class="text-lg md:text-2xl font-light mb-8 text-slate-200">
-					ArcGIS Pro • ArcGIS Online • QGIS • Python • Python: SQL • GitHub
-				</p>
-
-				<div class="flex flex-col sm:flex-row justify-center gap-4">
-					<a
-						href="../pages/projects.html"
-						class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-md font-semibold transition"
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="w-5 h-5 transform transition-transform duration-300 group-hover:translate-x-2"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+						stroke-width="2"
 					>
-						View Projects
-					</a>
-
-					<a
-						href="#resume"
-						class="bg-white text-slate-900 px-8 py-3 rounded-md font-semibold transition"
-					>
-						Download Resume
-					</a>
-				</div>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M9 5l7 7-7 7"
+						/>
+					</svg>
+				</a>
 			</div>
 		</section>
 
@@ -133,12 +117,11 @@
 							src="../images/GIS-for-Electric-Utilities-electrical-distribution-planning_1644595051.png"
 						/>
 						<div class="p-6 text-left">
-							<h4 class="font-semibold mb-2">
-								Electric Distribution Asset Database
-							</h4>
+							<h4 class="font-semibold mb-2">UTILITY INFRASTRUCTURE GIS</h4>
 							<p class="text-gray-600 text-sm">
-								Managed 50,000+ assets and automated QA/QC workflows integrated
-								with SAP & Maximo.
+								Roles at Duke Energy and Hope Gas involved managing tens of
+								thousands of linear assets, ensuring data quality for regulatory
+								submissions, and supporting real-time field operations.
 							</p>
 						</div>
 					</div>
@@ -148,12 +131,11 @@
 					>
 						<img src="../images/Automating GIS.gif" />
 						<div class="p-6 text-left">
-							<h4 class="font-semibold mb-2">
-								County ERP & GIS Workflow Automation
-							</h4>
+							<h4 class="font-semibold mb-2">GOVERNMENT & ENTERPRISE GIS</h4>
 							<p class="text-gray-600 text-sm">
-								Improved operational efficiency 30–40% through GIS enterprise
-								integration.
+								At Clayton County Government, focus was on enterprise system
+								integration, process re-engineering, and improving
+								cross-department geospatial workflows
 							</p>
 						</div>
 					</div>
@@ -164,11 +146,12 @@
 						<img src="../images/Wetland Mapping.png" />
 						<div class="p-6 text-left">
 							<h4 class="font-semibold mb-2">
-								Wetland Change Detection Analysis
+								REMOTE SENSING & ENVIRONMENTAL ANALYSIS
 							</h4>
 							<p class="text-gray-600 text-sm">
-								Satellite-based environmental analysis using temporal GIS
-								modeling.
+								Graduate research and academic projects focused on satellite
+								remote sensing, hydrogeophysics, and environmental change
+								detection, including GRACE/GRACE-FO groundwater data analysis.
 							</p>
 						</div>
 					</div>
@@ -177,16 +160,15 @@
 					<div
 						class="border rounded-xl overflow-hidden hover:shadow-lg transition"
 					>
-						<img
-							src="../images/GIS-for-Electric-Utilities-electrical-distribution-planning_1644595051.png"
-						/>
+						<img src="../images/imagesf.jpg" />
 						<div class="p-6 text-left">
 							<h4 class="font-semibold mb-2">
-								Electric Distribution Asset Database
+								REAL ESTATE & MARKET ANALYTICS GIS
 							</h4>
 							<p class="text-gray-600 text-sm">
-								Managed 50,000+ assets and automated QA/QC workflows integrated
-								with SAP & Maximo.
+								At Covgee Properties, GIS capabilities were applied to real
+								estate market intelligence, site selection, and spatial risk
+								assessment.
 							</p>
 						</div>
 					</div>
@@ -194,14 +176,14 @@
 					<div
 						class="border rounded-xl overflow-hidden hover:shadow-lg transition"
 					>
-						<img src="../images/Automating GIS.gif" />
+						<img src="../images/4640448_orig.jpg" />
 						<div class="p-6 text-left">
 							<h4 class="font-semibold mb-2">
-								County ERP & GIS Workflow Automation
+								PERSONAL PROJECTS & PROFESSIONAL DEVELOPMENT
 							</h4>
 							<p class="text-gray-600 text-sm">
-								Improved operational efficiency 30–40% through GIS enterprise
-								integration.
+								Independent projects that demonstrate initiative, creative
+								spatial storytelling, and ongoing skill development.
 							</p>
 						</div>
 					</div>
@@ -209,61 +191,19 @@
 					<div
 						class="border rounded-xl overflow-hidden hover:shadow-lg transition"
 					>
-						<img src="../images/Wetland Mapping.png" />
+						<img src="../images/portfolio-img8.jpg" />
 						<div class="p-6 text-left">
 							<h4 class="font-semibold mb-2">
-								Wetland Change Detection Analysis
+								PROFESSIONAL JOURNEY MAP - CAREER VISUALIZATION
 							</h4>
 							<p class="text-gray-600 text-sm">
-								Satellite-based environmental analysis using temporal GIS
-								modeling.
+								Designed an interactive map visualizing my career trajectory
+								from Lagos, Nigeria, through graduate study in Boston to
+								professional roles across the U.S.
 							</p>
 						</div>
 					</div>
 				</div>
-
-				<!-- see more projects -->
-				<a
-					href="../pages/projects.html"
-					class="group inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white text-sm font-semibold rounded-lg shadow-md mt-10 mb-2 transition-all duration-300 ease-in-out hover:bg-gray-700 hover:shadow-xl hover:-translate-y-1"
-				>
-					<span>See More Projects</span>
-
-					<!-- Arrow Icon -->
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						class="w-4 h-4 transform transition-transform duration-300 group-hover:translate-x-2"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke="currentColor"
-						stroke-width="2"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M9 5l7 7-7 7"
-						/>
-					</svg>
-				</a>
-			</div>
-		</section>
-
-		<!-- RESUME -->
-		<section id="resume" class="py-24 bg-gray-100 text-center">
-			<div class="max-w-4xl mx-auto px-6">
-				<h3 class="text-3xl font-bold mb-6">Resume & Credentials</h3>
-				<p class="text-gray-600 mb-8">
-					Download full professional CV detailing enterprise systems, remote
-					sensing research, and infrastructure GIS experience.
-				</p>
-
-				<a
-					href="resume.pdf"
-					download
-					class="bg-blue-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-blue-700 transition"
-				>
-					Download Resume (PDF)
-				</a>
 			</div>
 		</section>
 
