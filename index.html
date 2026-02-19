@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Philip Nalla | GIS Portfolio</title>
+
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+
+		<style>
+			body {
+				font-family: "Inter", sans-serif;
+			}
+
+			/* Dark overlay for video */
+			.video-overlay {
+				background: rgba(8, 20, 35, 0.75);
+			}
+		</style>
+	</head>
+
+	<body class="bg-gray-50 text-gray-800 scroll-smooth">
+		<!-- NAVIGATION -->
+		<header class="fixed w-full bg-white/90 backdrop-blur shadow-sm z-50">
+			<div
+				class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+			>
+				<h1
+					class="flex items-center justify-center gap-2 text-lg font-bold text-slate-900 tracking-wide"
+				>
+					<img
+						src="./images/Image png.png"
+						alt="Philip Nalla Image"
+						class="w-10 h-10 object-cover"
+					/>
+					<span>Philip Nalla</span>
+				</h1>
+
+				<nav
+					class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-wider"
+				>
+					<a href="#about" class="hover:text-blue-600 transition">About</a>
+					<a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+					<a href="#projects" class="hover:text-blue-600 transition"
+						>Projects</a
+					>
+					<a href="#resume" class="hover:text-blue-600 transition">Resume</a>
+					<a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+				</nav>
+
+				<button id="menu-btn" class="md:hidden text-2xl">☰</button>
+			</div>
+
+			<div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+				<div class="flex flex-col p-6 space-y-4 font-medium">
+					<a href="#about">About</a>
+					<a href="#skills">Skills</a>
+					<a href="#projects">Projects</a>
+					<a href="#resume">Resume</a>
+					<a href="#contact">Contact</a>
+				</div>
+			</div>
+		</header>
+
+		<!-- HERO SECTION WITH VIDEO -->
+		<section
+			class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden"
+		>
+			<!-- Background Video -->
+			<video
+				autoplay
+				muted
+				loop
+				playsinline
+				class="absolute w-auto min-w-full min-h-full max-w-none"
+			>
+				<source
+					src="https://www.pexels.com/download/video/10343918/"
+					type="video/mp4"
+				/>
+			</video>
+
+			<!-- Overlay -->
+			<div class="absolute inset-0 video-overlay"></div>
+
+			<!-- Content -->
+			<div class="relative z-10 max-w-4xl px-6">
+				<h2 class="text-3xl md:text-5xl font-extrabold leading-tight mb-6">
+					GIS Analyst, Remote Sensing Specialist & Geospatial Data Engineer
+				</h2>
+
+				<p class="text-lg md:text-2xl font-light mb-8 text-slate-200">
+					ArcGIS Pro • ArcGIS Online • QGIS • Python • Python: SQL • GitHub
+				</p>
+				<!-- <p class="text-lg md:text-2xl font-light mb-8 text-slate-200">
+					Applying GIS to infrastructure, environmental, and community-focused
+					solutions.
+				</p> -->
+
+				<div class="flex flex-col sm:flex-row justify-center gap-4">
+					<a
+						href="#projects"
+						class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-md font-semibold transition"
+					>
+						View Projects
+					</a>
+
+					<a
+						href="#resume"
+						class="bg-white text-slate-900 px-8 py-3 rounded-md font-semibold transition"
+					>
+						Download Resume
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- ABOUT -->
+		<section id="about" class="py-24 bg-white">
+			<div
+				class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center"
+			>
+				<div>
+					<img
+						src="./images/Image png - Copy.png"
+						class="rounded-xl w-45 object-cover"
+						alt="Philip Nalla Profile"
+					/>
+				</div>
+
+				<div>
+					<h3 class="text-3xl font-bold mb-6 text-slate-900">About Me</h3>
+
+					<p class="text-gray-600 leading-relaxed mb-6">
+						GIS Analyst with over five years of progressive experience spanning
+						utility infrastructure, state/local government, and real estate
+						analytics. Holds a Master's in Remote Sensing and Geospatial Science
+						from Boston University (2023).
+					</p>
+
+					<p class="text-gray-600 leading-relaxed mb-6">
+						Demonstrated expertise in enterprise GIS system integration (SAP,
+						Maximo, Smallworld), Python automation, and managing large-scale
+						infrastructure databases. Adept at translating complex spatial data
+						into actionable insights that support field operations, regulatory
+						compliance, and organizational decision-making.
+					</p>
+
+					<p class="text-gray-600 leading-relaxed">
+						Applying GIS to infrastructure, environmental, and community-focused
+						solutions.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- SKILLS -->
+		<section id="skills" class="py-24 bg-gray-100">
+			<div class="max-w-6xl mx-auto px-6 text-center">
+				<h3 class="text-3xl font-bold text-slate-900 mb-14">
+					Technical Skills
+				</h3>
+
+				<div class="grid md:grid-cols-3 gap-10">
+					<div
+						class="bg-white p-8 rounded-xl shadow-sm flex flex-col items-center justify-center text-center"
+					>
+						<h4 class="font-bold mb-4 text-lg">GS Software</h4>
+						<img
+							class="w-20 mb-4"
+							src="./images/software.png"
+							alt="GS Software"
+						/>
+						<p class="text-gray-600 text-sm">
+							ArcGIS Pro - QGIS, Google Earth Engine.
+						</p>
+					</div>
+
+					<div
+						class="bg-white p-8 rounded-xl shadow-sm flex flex-col items-center justify-center text-center"
+					>
+						<h4 class="font-bold mb-4 text-lg">Analysis</h4>
+						<img
+							class="w-20 mb-4"
+							src="./images/Anaylsis.png"
+							alt="Analysis Automation Image"
+						/>
+						<p class="text-gray-600 text-sm">
+							• Spatial joins, buffers, rastter analysis cantingy isoalaization.
+							• Uscalted diomeladoned saxy pram or gish.
+						</p>
+					</div>
+
+					<div
+						class="bg-white p-8 rounded-xl shadow-sm flex flex-col items-center justify-center text-center"
+					>
+						>
+						<h4 class="font-bold mb-4 text-lg">Analysis Automation</h4>
+						<img
+							class="w-20 mb-4"
+							src="./images/automation.png"
+							alt="Analysis Automation Image"
+						/>
+						<p class="text-gray-600 text-sm">
+							GRACE groundwater modeling, wetland change detection, ERT
+							geophysical analysis, satellite data processing.
+						</p>
+					</div>
+					<div
+						class="bg-white p-8 rounded-xl shadow-sm flex flex-col items-center justify-center text-center"
+					>
+						<h4 class="font-bold mb-4 text-lg">Data Management</h4>
+						<img
+							class="w-20 mb-4"
+							src="./images/data management.png"
+							alt="Data Management Image"
+						/>
+						<p class="text-gray-600 text-sm">
+							Electric & gas distribution asset management, QA/QC workflows, ERP
+							integration, large-scale spatial databases.
+						</p>
+					</div>
+
+					<div
+						class="bg-white p-8 rounded-xl shadow-sm flex flex-col items-center justify-center text-center"
+					>
+						<h4 class="font-bold mb-4 text-lg">Enterprise & Government GIS</h4>
+						<img
+							class="w-20 mb-4"
+							src="./images/Government GIS.png"
+							alt="Enterprise & Government GIS Image"
+						/>
+						<p class="text-gray-600 text-sm">
+							Workflow automation, metadata standards, ArcGIS Enterprise,
+							cross-department spatial system integration.
+						</p>
+					</div>
+
+					<div
+						class="bg-white p-8 rounded-xl shadow-sm flex flex-col items-center justify-center text-center"
+					>
+						<h4 class="font-bold mb-4 text-lg">Remote Sensing & Hydrology</h4>
+						<img
+							class="w-20 mb-4"
+							src="./images/Remote Sensing & Hydrology.png"
+							alt="Remote Sensing & Hydrology Image"
+						/>
+						<p class="text-gray-600 text-sm">
+							Remote sensing provides detailed images and measurements of
+							surface water, soil moisture, precipitation, and land features.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- PROJECTS -->
+		<section id="projects" class="py-24 bg-white">
+			<div class="max-w-6xl mx-auto px-6 text-center">
+				<h3 class="text-3xl font-bold mb-14">Projects</h3>
+
+				<div class="grid md:grid-cols-3 gap-10">
+					<div
+						class="border rounded-xl overflow-hidden hover:shadow-lg transition"
+					>
+						<img src="project1.jpg" />
+						<div class="p-6 text-left">
+							<h4 class="font-semibold mb-2">
+								Electric Distribution Asset Database
+							</h4>
+							<p class="text-gray-600 text-sm">
+								Managed 50,000+ assets and automated QA/QC workflows integrated
+								with SAP & Maximo.
+							</p>
+						</div>
+					</div>
+
+					<div
+						class="border rounded-xl overflow-hidden hover:shadow-lg transition"
+					>
+						<img src="project2.jpg" />
+						<div class="p-6 text-left">
+							<h4 class="font-semibold mb-2">
+								County ERP & GIS Workflow Automation
+							</h4>
+							<p class="text-gray-600 text-sm">
+								Improved operational efficiency 30–40% through GIS enterprise
+								integration.
+							</p>
+						</div>
+					</div>
+
+					<div
+						class="border rounded-xl overflow-hidden hover:shadow-lg transition"
+					>
+						<img src="project3.jpg" />
+						<div class="p-6 text-left">
+							<h4 class="font-semibold mb-2">
+								Wetland Change Detection Analysis
+							</h4>
+							<p class="text-gray-600 text-sm">
+								Satellite-based environmental analysis using temporal GIS
+								modeling.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- RESUME -->
+		<section id="resume" class="py-24 bg-gray-100 text-center">
+			<div class="max-w-4xl mx-auto px-6">
+				<h3 class="text-3xl font-bold mb-6">Resume & Credentials</h3>
+				<p class="text-gray-600 mb-8">
+					Download full professional CV detailing enterprise systems, remote
+					sensing research, and infrastructure GIS experience.
+				</p>
+
+				<a
+					href="resume.pdf"
+					download
+					class="bg-blue-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-blue-700 transition"
+				>
+					Download Resume (PDF)
+				</a>
+			</div>
+		</section>
+
+		<!-- CONTACT -->
+		<section id="contact" class="py-24 bg-slate-900 text-white text-center">
+			<div class="max-w-4xl mx-auto px-6">
+				<h3 class="text-3xl font-bold mb-6">Contact</h3>
+				<p class="text-slate-300 mb-4">
+					Available for GIS consulting, infrastructure systems, and research
+					collaborations.
+				</p>
+				<p>Email: philipnalla@gmail.com</p>
+			</div>
+		</section>
+
+		<footer class="bg-black text-gray-400 text-center py-6">
+			© 2026 Philip Nalla | GIS Portfolio
+		</footer>
+
+		<script>
+			const btn = document.getElementById("menu-btn");
+			const menu = document.getElementById("mobile-menu");
+			btn.addEventListener("click", () => {
+				menu.classList.toggle("hidden");
+			});
+		</script>
+	</body>
+</html>
